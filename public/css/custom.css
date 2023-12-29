@@ -1,0 +1,11 @@
+.content {
+    min-height: inherit;
+}
+
+a.btn:not([href]):not([tabindex]) {
+    color: white
+}
+
+.form-child .form-group.row>div {
+    margin: 5px 0
+}

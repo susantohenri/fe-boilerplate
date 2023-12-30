@@ -17,7 +17,7 @@ export default function NotFound({ setBreadCrumbs }) {
                 <h3>Oops! Page not found.</h3>
                 <p>
                     We could not find the page you were looking for.
-                    Meanwhile, you may <Link to="/">return to dashboard</Link> or try using the search form.
+                    Meanwhile, you may <Link to="/">return to dashboard</Link>
                 </p>
             </div>
         </div>

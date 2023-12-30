@@ -11,6 +11,8 @@ import Dashboard from './pages/Dashboard';
 import Breadcrumbs from './components/Breadcrumbs';
 import NotFound from './pages/NotFound';
 import { useState } from 'react';
+import UserTable from './pages/user/UserTable';
+import UserForm from './pages/user/UserForm';
 
 function App() {
   const [breadCrumbs, setBreadCrumbs] = useState([])
@@ -27,6 +29,10 @@ function App() {
                 <Routes>
                   <Route path="*" element={<NotFound setBreadCrumbs={setBreadCrumbs} />}></Route>
                   <Route path="/" element={<Dashboard />}></Route>
+
+                  <Route path="/User" element={<UserTable setBreadCrumbs={setBreadCrumbs} />}></Route>
+                  <Route path="/User/:id" element={<UserForm setBreadCrumbs={setBreadCrumbs} />}></Route>
+
                 </Routes>
               </div>
             </div>
